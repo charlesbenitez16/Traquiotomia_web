@@ -1,0 +1,200 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  #logo a {
+    display: block;
+  }
+  
+  #logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  #nav {
+    display: flex;
+  }
+  
+  #nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nav li {
+    margin: 0 10px;
+  }
+  
+  #nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #nav a:hover {
+    color: #ccc;
+  }
+
+
+/* HERO */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  /*background-color: #333;*/
+  background-image: url(../images/funkos-banner1.png);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+#hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+#hero p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+#hero .btn {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border: 2px solid #000002;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+#hero .btn:hover {
+  background-color: #fff;
+  color: #333;
+}  
+
+/* Sección Columnas (2) */
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6b420c8c;
+  padding: 50px 20px;
+}
+#features .container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#features .left-column {
+  width: 50%;
+  text-align: center;
+}
+#features .left-column img {
+  width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+#features .right-column {
+  width: 50%;
+  text-align: left;
+  padding: 0 20px;
+}
+#features h2 {
+  font-size: 2em;
+  margin: 0 0 20px;
+}
+#features p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0;
+}
+#features .btn {
+  display: inline-block;
+  font-size: 1em;
+  padding: 15px 30px;
+  border: 2px solid #020000;
+  border-radius: 5px;
+  color: #fcfbfb;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+#features .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Galería */
+#galeria {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #6b420c8c;
+}
+#galeria h2 {
+  font-size: 2em;
+  margin: 0 0 20px;
+}
+#galeria .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -5px;
+}
+#galeria .galeria img {
+  width: 30%;
+  height: auto;
+  margin: 0 5px 20px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+#galeria .galeria img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+#footer .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#footer h3 {
+  font-size: 1.2em;
+  margin: 0 0 20px;
+}
+#footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer li {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+#footer a:hover {
+  color: #333;
+}
+#footer .fa {
+  font-size: 1.5em;
+  margin: 0 5px;
+}
