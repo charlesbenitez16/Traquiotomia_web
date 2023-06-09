@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Preguntas frecuentes</title>
+  <link rel="stylesheet" href="./css/styles_p.css">
+  <link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-*******************" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <header>
+    <div id="logo">
+    <a href="/">
+        <img src="images/funko-icon.svg" alt="Logo de la empresa">
+    </a>
+    </div>
+    <div id="nav">
+      <nav>
+          <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./videos.html">Videos</a></li>
+          <li><a href="./preguntas_4.html">Preguntas</a></li>
+          </ul>
+      </nav>
+     </div>
+
+  
+    </header>  
+  <div class="container">
+    <h1>  Preguntas Frecuentes </h1>
+    <main>
+      <section class="preguntas">
+        <table>
+          <tr>
+            <td>
+              <h2 onclick="mostrarRespuesta(1)">¿Cuál es el horario de atención?</h2>
+              <p class="respuesta" id="respuesta1">Estamos disponibles de lunes a viernes de 9 a.m. a 6 p.m.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 onclick="mostrarRespuesta(2)">¿Cómo puedo realizar una compra?</h2>
+              <p class="respuesta" id="respuesta2">Puedes realizar una compra a través de nuestro sitio web o contactándonos directamente por teléfono o correo electrónico.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 onclick="mostrarRespuesta(3)">¿Cuál es el plazo de entrega?</h2>
+              <p class="respuesta" id="respuesta3">El plazo de entrega varía según el producto y la ubicación. Por favor, contáctanos para más información.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 onclick="mostrarRespuesta(4)">¿Cómo puedo realizar un pago?</h2>
+              <p class="respuesta" id="respuesta4">Aceptamos pagos en línea y por transferencia bancaria. Por favor, contáctanos para más información.</p>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <button onclick="scrollToTop()" class="scroll-top-btn">Volver arriba</button>
+  </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+      <div class="left-column">
+          <img src="images/funko-icon.svg" alt="Logo de la empresa" width="150" height="150">
+      </div>
+      <div class="center-column">
+          <h3>Servicios de Atencion Medica</h3>
+          <ul>
+          <li>Traquiotomia</li>
+          <li>Primeros auxilios</li>
+          <li>Manual</li>
+          <li>etc.</li>
+          </ul>
+      </div>
+      <div class="right-column">
+          <h3>Pestañas legales</h3>
+          <ul>
+          <li>Política de privacidad</li>
+          <li>Términos y condiciones</li>
+          <li>Cookies</li>
+          <li>Declaración de accesibilidad</li>
+          </ul>
+      </div>
+      <div class="social-column">
+          <h3>Redes sociales</h3>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/decanmed/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+      </div>
+      </div>
+  </footer>
+  <script>
+    function mostrarRespuesta(id) {
+      var respuesta = document.getElementById("respuesta" + id);
+      if (respuesta.style.maxHeight) {
+        respuesta.style.maxHeight = null;
+        respuesta.classList.remove("visible");
+      } else {
+        respuesta.style.maxHeight = respuesta.scrollHeight + "px";
+        respuesta.classList.add("visible");
+      }
+    }
+
+    function scrollToTop() {
+      var scrollTopBtn = document.querySelector('.scroll-top-btn');
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
